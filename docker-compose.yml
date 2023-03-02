@@ -10,9 +10,21 @@ services:
     volumes:
       - ./db:/data/db
   vuejs:
+    container_name: vuejs
     build:
       context: .
       dockerfile: Dockerfile
     image: hanu4u89/docker-vuejs
     ports:
       - "8081:8080"
+
+  django_recipe_api:
+    container_name: django
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" 
+    volumes: 
+      - ./backend:/django_recipe_api
+    command: sh -c "python manage.py runserver 0.0.0.0:8000" 
