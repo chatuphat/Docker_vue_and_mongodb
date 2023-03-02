@@ -1,24 +1,15 @@
-# docker-vuejs2
+# docker
+docker - vue.js - mongodb - django
 
 ## Project setup
 ```
-npm install
+docker-compose build
+docker-compose up -d
 ```
+Ref
+- [How to Create a Django Docker Application Container](https://duckduckgo.com).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- [Using MongoDB with Docker](https://earthly.dev/blog/mongodb-docker/).
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [Docker VueJS Example](https://www.middlewareinventory.com/blog/docker-vuejs/).
